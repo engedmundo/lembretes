@@ -1,4 +1,29 @@
-# Comandos de docker
+# Docker
+**Container:** maneira de rodar ambientes isolados do sistema operacional.
+**Docker:** gerenciador de containers
+
+
+## Instalar docker no Windows:
+##### Donwloads:
+* baixar Docker desktop installer
+* baixar VSCode
+* baixar wsl_update_x64.msi
+
+##### Configuração:
+* Instalar VScode
+* Baixar extensões:
+** Material Icon
+** Code Runner
+** YAML
+* Instalar wsl
+* Instalar docker desktop
+
+Após a instalação, se tudo ocorreu bem, é possível verificar da seguinte maneira:
+* Abrir o Power Shell
+* `docker run hello-world`
+
+
+## Comandos de docker
 
 ##### Verificar a versão instalada:
 `docker version`

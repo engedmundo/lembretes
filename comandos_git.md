@@ -2,7 +2,7 @@
 
 ##### Fazer um clone de projeto:
 `git clone <link de acesso remoto> .`
-**OBS:** Inserir ponto ao final para ficar dentro da pasta selecionada e náo criar outra pasta
+**OBS:** Inserir ponto ao final para ficar dentro da pasta selecionada e não criar outra pasta
 
 ##### Configurar usuário:
 `git config --global user.name "nome"`
