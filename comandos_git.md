@@ -11,6 +11,8 @@
 ##### Histórico de comits:
 `git log`
 
+##### Fazer um commit:
+`git commit -m "mensagem do commit"`
 ##### Enviar comits:
 `git push`
 
