@@ -1,0 +1,15 @@
+# style blocks
+host: amazon
+datacenter: 
+  location: São Paulo
+  router: 42
+roles:
+  - web
+  - dns
+  
+
+# style flow
+host: "amazon"
+datacenter: { location: 
+  São Paulo, router: 42 }
+roles: [ web, dns ]
