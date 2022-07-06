@@ -88,3 +88,22 @@ sempre vai baixar a última versão, para baixar uma versão específica usar:
 * `docker run -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx:1.23.0-alpine` criar e rodar um servidor nginx
 * `docker run -d -p 8080:80 nginx:1.23.0-alpine` conectar a porta 8080 do computador a porta 80 do container
 
+## Volumes
+Usados para persistir dados em um container, uma vez que ao parar a execução do mesmo, os dados dentro do container são perdidos.
+Mapear um volume é ato de criar uma conexão entre um diretório no host (pc onde o docker está instalado) e o container.
+* **Criar o volume:**
+  * usar a flag `-v "endereco mapeado dentro do container"`
+  * `docker run -v "/var/www" -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx:1.23.0-alpine`
+  * nesse caso, somente está ligado no container, em um local aleatório no host
+  * Para mapear no host e no container, separar por dois pontos (:)
+  * `docker run -v "/host/endereco:/var/www" -d -e NGINX_ENTRYPOINT_QUIET_LOGS=1 nginx:1.23.0-alpine`
+* Executar o shell dentro do container:
+  * `docker exec -it <id-container> sh`
+  * `cd var/www/` ir para a pasta mapeada
+  * `echo "alguma coisa" >> teste.txt` inserir texto em um arquivo de teste
+  * `cat teste.txt` abrir o arquivo na pasta selecionada
+* Parar o container:
+  * `docker container stop <id-container>`
+  * Reiniciar o container:
+  * `docker container start <id-conatainer>` 
+
